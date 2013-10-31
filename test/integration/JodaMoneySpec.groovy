@@ -32,6 +32,6 @@ class JodaMoneySpec extends Specification {
         // use a BigMoney for more complex calculations where scale matters
         BigMoney moneyCalc = money.toBigMoney();
         expect:
-        moneyCalc.amount == 4.0G
+        moneyCalc.amount == 120.0G
     }
 }

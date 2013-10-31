@@ -1,5 +1,7 @@
 grails.project.work.dir = 'target'
 
+grails.project.dependency.resolver = "maven" // or ivy
+
 grails.project.dependency.resolution = {
 
     inherits 'global'
@@ -13,6 +15,7 @@ grails.project.dependency.resolution = {
 
     dependencies {
         compile('org.joda:joda-money:0.9')
+        compile 'org.jadira.usertype:usertype.jodatime:1.9.1'
 //        test("org.spockframework:spock-grails-support:${spockVersion}-groovy-2.0")
     }
 
